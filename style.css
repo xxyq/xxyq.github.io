@@ -122,9 +122,9 @@ header.masthead .intro-text {
     cursor: pointer;
   }
   
-  /* Section Header Styling */
+
 #about {
-    background-color: #f8f9fa; /* Light background color for the section */
+    background-color: #f8f9fa; 
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -152,12 +152,14 @@ header.masthead .intro-text {
   
 
 .section-heading {
+  margin-bottom: 15px;
     font-size: 2.5rem;
     font-weight: bold;
     color: #333;
 }
 
 .section-subheading {
+  margin-bottom: 30px;
     font-size: 1.25rem;
     color: #6c757d;
 }
@@ -581,16 +583,56 @@ header.masthead {
 }
 
 .service-card {
-  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%; /* Ensure card does not exceed container width */
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for icons */
+.icon i {
+  color: #007bff; /* Bootstrap primary color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .section-heading {
+      font-size: 2rem;
+  }
+
+  .section-subheading {
+      font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-heading {
+      font-size: 1.75rem;
+  }
+
+  .section-subheading {
+      font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 768px) {
   .section-heading {
       font-size: 1.5rem;
   }
+
+  .section-subheading {
+      font-size: 1rem;
+  }
   
   .service-card {
-      padding: 2rem;
+      padding: 1rem;
+  }
+
+  .icon i {
+      font-size: 2rem;
   }
 }
 
@@ -598,16 +640,19 @@ header.masthead {
   .section-heading {
       font-size: 1.25rem;
   }
+
+  .section-subheading {
+      font-size: 0.875rem;
+  }
   
   .service-card {
-      padding: 1.5rem;
+      padding: 0.75rem;
   }
-  
+
   .icon i {
-      font-size: 2rem;
+      font-size: 1.5rem;
   }
 }
-  
 body {
   overflow-x: hidden;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
