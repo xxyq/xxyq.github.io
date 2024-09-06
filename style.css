@@ -529,7 +529,7 @@ header.masthead {
     height: 90vh; 
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     animation: bgAnimation 30s infinite; 
 }
 
