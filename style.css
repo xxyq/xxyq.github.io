@@ -559,6 +559,29 @@ header.masthead {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .section-heading {
+      font-size: 1.5rem;
+  }
+  
+  .service-card {
+      padding: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-heading {
+      font-size: 1.25rem;
+  }
+  
+  .service-card {
+      padding: 1.5rem;
+  }
+  
+  .icon i {
+      font-size: 2rem;
+  }
+}
   
 body {
   overflow-x: hidden;
