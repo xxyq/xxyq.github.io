@@ -535,31 +535,43 @@ header.masthead {
 @keyframes bgAnimation {
     0% {
         background-image: url('src/img/m12.jpg');
-        background-position: 0% 0%;
+        background-position: center center;
     }
     33% {
         background-image: url('src/img/m11.jpg');
-        background-position: 100% 0%;
+        background-position:center center;
     }
     66% {
         background-image: url('src/img/m14.avif '); 
-        background-position: 0% 100%;
+        background-position: center center;
     }
     100% {
         background-image: url('src/img/m13.jpg'); 
-        background-position: 0% 0%;
+        background-position: center center;
     }
+}
+
+@media (max-width: 1200px) {
+  .masthead {
+      height: 75vh; 
+  }
+}
+
+@media (max-width: 992px) {
+  .masthead {
+      height: 60vh; 
+  }
 }
 
 @media (max-width: 768px) {
   .masthead {
-      height: 80vh; 
+      height: 50vh; 
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .masthead {
-      height: 60vh; 
+      height: 40vh; 
   }
 }
 
