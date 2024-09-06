@@ -529,6 +529,7 @@ header.masthead {
     height: 90vh; 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     animation: bgAnimation 30s infinite; 
 }
 
@@ -542,7 +543,7 @@ header.masthead {
         background-position:center center;
     }
     66% {
-        background-image: url('src/img/m14.avif '); 
+        background-image: url('src/img/m14.avif'); 
         background-position: center center;
     }
     100% {
