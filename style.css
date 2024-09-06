@@ -551,6 +551,18 @@ header.masthead {
     }
 }
 
+@media (max-width: 768px) {
+  .masthead {
+      height: 80vh; 
+  }
+}
+
+@media (max-width: 480px) {
+  .masthead {
+      height: 60vh; 
+  }
+}
+
 .carousel-item {
   transition: transform 0.5s ease-in-out;
 }
