@@ -208,6 +208,11 @@ section {
     color: #6c757d;
 }
 
+.rounded-circle{
+  width: 270px;
+  height: 270px;
+}
+
 /* Timeline Styling */
 .timeline {
     position: relative;
@@ -321,7 +326,7 @@ section {
 }
 
 .timeline-item:last-child .timeline-image {
-    background: #007bff; /* Final call-to-action color */
+    background: #007bff; 
     color: #fff;
     border: none;
     text-align: center;
