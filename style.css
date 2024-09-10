@@ -1,5 +1,37 @@
-/* element.style {
-} */
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transition: padding-top .3s,padding-bottom .3s;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
@@ -149,7 +181,19 @@ header.masthead .intro-text {
     margin-left: auto;
   }
   
-  
+
+  @media (min-width: 768px) {
+    section {
+        padding: 150px 0;
+    }
+}
+
+section {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+
 
 .section-heading {
   margin-bottom: 15px;
@@ -582,77 +626,7 @@ header.masthead {
   transition: transform 0.5s ease-in-out;
 }
 
-.service-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 100%; /* Ensure card does not exceed container width */
-}
 
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Style for icons */
-.icon i {
-  color: #007bff; /* Bootstrap primary color */
-}
-
-/* Responsive adjustments */
-@media (max-width: 1200px) {
-  .section-heading {
-      font-size: 2rem;
-  }
-
-  .section-subheading {
-      font-size: 1.25rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .section-heading {
-      font-size: 1.75rem;
-  }
-
-  .section-subheading {
-      font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .section-heading {
-      font-size: 1.5rem;
-  }
-
-  .section-subheading {
-      font-size: 1rem;
-  }
-  
-  .service-card {
-      padding: 1rem;
-  }
-
-  .icon i {
-      font-size: 2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .section-heading {
-      font-size: 1.25rem;
-  }
-
-  .section-subheading {
-      font-size: 0.875rem;
-  }
-  
-  .service-card {
-      padding: 0.75rem;
-  }
-
-  .icon i {
-      font-size: 1.5rem;
-  }
-}
 body {
   overflow-x: hidden;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
